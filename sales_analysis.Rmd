@@ -1,0 +1,105 @@
+<!--
+AI Assistance Declaration:
+I used ChatGPT (GPT-6, OpenAI; 1–7 November 2026) for documentation structure,
+formatting suggestions, and wording. Key prompts are summarized in Appendix.md.
+I reviewed this document against sales_analysis.R. I have not yet knitted it
+in RStudio or previewed it on GitHub; those checks remain my responsibility.
+I am responsible for the accuracy and originality of this work.
+-->
+
+---
+title: "Documentation: Synthetic Retail Sales Analysis"
+author: "Gurneet Singh"
+date: "7 November 2026"
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+---
+
+# Purpose
+
+`sales_analysis.R` generates a reproducible synthetic retail sales dataset, summarizes sales, creates charts, and exports CSV files. The dataset is fictional and does not contain real customer, employee, or business information.
+
+# Inputs
+
+No external data file is required. The script creates its own data using:
+
+- A fixed random seed (`400`) for reproducibility.
+- Twelve monthly dates beginning in January 2025.
+- Three fictional products: Headphones, Desk Lamp, and T-shirt.
+- A category, unit price, and baseline sales volume for each product.
+
+Random variation is applied to baseline units sold. Revenue is calculated from units sold multiplied by unit price.
+
+# Dependencies
+
+R and the `ggplot2` package are required to run the script.
+
+```{r install-package, eval=FALSE}
+install.packages("ggplot2")
+```
+
+The R Markdown document requires the `rmarkdown` and `knitr` packages to knit to HTML in RStudio. If they are not installed, install them with:
+
+```{r install-rmarkdown, eval=FALSE}
+install.packages(c("rmarkdown", "knitr"))
+```
+
+# Outputs
+
+Running `sales_analysis.R` creates an `output/` folder containing:
+
+| Output file | Description |
+|---|---|
+| `synthetic_retail_sales.csv` | Generated monthly product-level sales records. |
+| `monthly_sales_summary.csv` | Revenue aggregated by month. |
+| `category_sales_summary.csv` | Units sold and revenue aggregated by category. |
+| `monthly_revenue.png` | Line chart of monthly revenue. |
+| `category_revenue.png` | Bar chart of revenue by product category. |
+
+The script also prints total revenue, total units sold, category summaries, and the top product by revenue in the R Console.
+
+# Main workflow
+
+1. Check that `ggplot2` is installed.
+2. Generate the monthly dates and product reference data.
+3. Create month/product combinations and generate synthetic units sold.
+4. Calculate revenue for each product/month record.
+5. Aggregate the data by month, category, and product.
+6. Print summary information.
+7. Create and save two charts.
+8. Export the dataset and summary tables as CSV files.
+
+# Example usage
+
+Run the script from the repository root in RStudio:
+
+```{r run-script, eval=FALSE}
+source("sales_analysis.R")
+```
+
+After the script completes, read the category summary:
+
+```{r read-output, eval=FALSE}
+category_summary <- read.csv("output/category_sales_summary.csv")
+head(category_summary)
+```
+
+# Verification checklist
+
+Complete these checks locally before submission:
+
+- [ ] Confirm `ggplot2` is installed.
+- [ ] Run `source("sales_analysis.R")` from the repository root.
+- [ ] Confirm the Console displays the summary information.
+- [ ] Confirm all five expected output files appear in `output/`.
+- [ ] Open and inspect the CSV files and PNG charts.
+- [ ] Knit this `.Rmd` file to HTML and inspect the rendered document.
+- [ ] Preview `README.md` on GitHub.
+
+**Verification status:** The documentation was compared with the included R script during preparation. The script has not been executed in an R environment here, and this R Markdown file has not been knitted. Complete the checklist and update the record based on the actual results.
+
+# Limitations
+
+The dataset contains only three fictional products over twelve months. It is suitable for demonstrating a simple data-generation and summarization workflow, not for drawing conclusions about real retail activity.

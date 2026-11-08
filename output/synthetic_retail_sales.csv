@@ -1,0 +1,37 @@
+"product","month","category","unit_price","base_units","units_sold","revenue"
+"Headphones",2025-01-01,"Electronics",80,42,34,2720
+"Desk Lamp",2025-01-01,"Home",35,55,60,2100
+"T-shirt",2025-01-01,"Clothing",25,70,82,2050
+"Headphones",2025-02-01,"Electronics",80,42,37,2960
+"Desk Lamp",2025-02-01,"Home",35,55,50,1750
+"T-shirt",2025-02-01,"Clothing",25,70,59,1475
+"Headphones",2025-03-01,"Electronics",80,42,49,3920
+"Desk Lamp",2025-03-01,"Home",35,55,61,2135
+"T-shirt",2025-03-01,"Clothing",25,70,71,1775
+"Headphones",2025-04-01,"Electronics",80,42,37,2960
+"Desk Lamp",2025-04-01,"Home",35,55,48,1680
+"T-shirt",2025-04-01,"Clothing",25,70,71,1775
+"Headphones",2025-05-01,"Electronics",80,42,29,2320
+"Desk Lamp",2025-05-01,"Home",35,55,54,1890
+"T-shirt",2025-05-01,"Clothing",25,70,61,1525
+"Headphones",2025-06-01,"Electronics",80,42,46,3680
+"Desk Lamp",2025-06-01,"Home",35,55,50,1750
+"T-shirt",2025-06-01,"Clothing",25,70,67,1675
+"Headphones",2025-07-01,"Electronics",80,42,47,3760
+"Desk Lamp",2025-07-01,"Home",35,55,47,1645
+"T-shirt",2025-07-01,"Clothing",25,70,78,1950
+"Headphones",2025-08-01,"Electronics",80,42,22,1760
+"Desk Lamp",2025-08-01,"Home",35,55,55,1925
+"T-shirt",2025-08-01,"Clothing",25,70,78,1950
+"Headphones",2025-09-01,"Electronics",80,42,54,4320
+"Desk Lamp",2025-09-01,"Home",35,55,65,2275
+"T-shirt",2025-09-01,"Clothing",25,70,79,1975
+"Headphones",2025-10-01,"Electronics",80,42,40,3200
+"Desk Lamp",2025-10-01,"Home",35,55,58,2030
+"T-shirt",2025-10-01,"Clothing",25,70,67,1675
+"Headphones",2025-11-01,"Electronics",80,42,40,3200
+"Desk Lamp",2025-11-01,"Home",35,55,51,1785
+"T-shirt",2025-11-01,"Clothing",25,70,74,1850
+"Headphones",2025-12-01,"Electronics",80,42,45,3600
+"Desk Lamp",2025-12-01,"Home",35,55,51,1785
+"T-shirt",2025-12-01,"Clothing",25,70,65,1625
